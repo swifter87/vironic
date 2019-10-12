@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72307bf5.chunk.css",
+    "main.js": "/static/js/main.8b140a8f.chunk.js",
+    "main.js.map": "/static/js/main.8b140a8f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a9b024df.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a9b024df.js.map",
+    "static/js/2.56438e88.chunk.js": "/static/js/2.56438e88.chunk.js",
+    "static/js/2.56438e88.chunk.js.map": "/static/js/2.56438e88.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.166bd55e74ac5d75308f6e5f1d6a769d.js": "/precache-manifest.166bd55e74ac5d75308f6e5f1d6a769d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.72307bf5.chunk.css.map": "/static/css/main.72307bf5.chunk.css.map",
+    "static/media/mobile.png": "/static/media/mobile.73948da1.png",
+    "static/media/swifter_black.png": "/static/media/swifter_black.ed72796e.png",
+    "static/media/video.png": "/static/media/video.b493b3f3.png",
+    "static/media/video2.gif": "/static/media/video2.04847a91.gif",
+    "static/media/video2.mp4": "/static/media/video2.9f1e4360.mp4"
+  }
+}
