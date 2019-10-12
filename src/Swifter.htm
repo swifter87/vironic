@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <link href="./Swifter_files/css" rel="stylesheet">
+    <link href="./Swifter_files/hamburgers.css" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Swifter</title>
+  <style>html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+</style><style>.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(252, 250, 250);
+}
+.navigation {
+  margin: 20px;
+  padding-top: 5px;
+  padding-right: 100px;
+}
+
+.logo {
+  padding-top: 15px;
+  display: inline-block;
+  padding-left: 9%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.responsive {
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.image-text {
+  color: rgb(6, 100, 155);
+  font-size: 41.5px;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.first-text {
+  margin: 0;
+}
+
+.second-text {
+  color: rgb(31, 149, 218);
+  font-size: 20px;
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+a {
+  margin: 5px;
+  padding: 7px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* .main {
+  height: 100%;
+  width: 100%;
+} */
+
+.center-image {
+  margin-top: 120px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.text {
+  font-size: 20px;
+  padding: 0 0 0 100px;
+  color: rgb(255, 255, 255);
+  max-width: 500px;
+  text-align: left;
+}
+
+.title {
+  font-size: 50px;
+  padding: 80px;
+}
+
+.description {
+  padding-top: 20px;
+}
+
+.strip-blue {
+  background-color: rgb(93, 142, 247);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.strip-white {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 30px 0 0;
+  }
+  .image-text {
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .center-image {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .first-text {
+    font-size: 30px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+  .second-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .responsive {
+    width: 80%;
+  }
+}
+
+.primary-btn {
+  font-size: 18px;
+  border-color: rgb(32, 163, 20);
+  margin: 20px 20px 25px 0px;
+  padding: 14px;
+  background-color: rgba(22, 149, 202, 1);
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="main"><nav class="header"><div class="logo"><img src="./Swifter_files/logo_back_2.1c3ef4a5.png" alt="Logo" width="160" height="50"></div><div class="hamburger"><div class="line line1"></div><div class="line line2"></div><div class="line line3"></div></div><div class="navigation"><a href="http://localhost:3000/#">Home</a><a href="http://localhost:3000/#">User Aquisition</a><a href="http://localhost:3000/#">Monetization</a><a href="http://localhost:3000/#">Contact</a></div></nav><div class="center-image"><span class="image-text"><p class="first-text">Grow your mobile business at every stage of the lifecycle</p><p class="second-text">Whether you need to acquire high-quality users, boost engagement and retention, or maximize ad revenue, Swifter has you covered.</p><button class="primary-btn"> Developer</button><button class="primary-btn"> Advertiser</button></span><img src="./Swifter_files/mobile.73948da1.png" class="responsive" alt="image" width="550" height="367"></div><div class="strip-blue"><h1 class="title">Acquire Players Who Spend</h1><div class="container"><img src="./Swifter_files/Screen1.1fc62c00.png" class="game" alt="image" width="295" height="500"><ul class="text"><li class="description">Tap into a database of 2 billion mobile profiles to identify the most valuable players for your game</li><li class="description">Reach 98% of mobile app users programmatically in over 500k apps</li><li class="description">Increase in-app purchases through</li><li class="description">CPA optimization Optimize for mobile gamers, not just installs</li></ul></div><div class="strip-white"><h1 class="title">Acquire Players Who Spend</h1><div class="container"><img src="./Swifter_files/Screen1.1fc62c00.png" class="game" alt="image" width="295" height="500"><ul class="text"><li class="description">Tap into a database of 2 billion mobile profiles to identify the most valuable players for your game</li><li class="description">Reach mobile app users programmatically in over 500k apps</li><li class="description">Increase in-app purchases through</li><li class="description">CPA optimization Optimize for mobile gamers, not just installs</li></ul></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Swifter_files/bundle.js"></script><script src="./Swifter_files/0.chunk.js"></script><script src="./Swifter_files/main.chunk.js"></script><script src="./Swifter_files/main.7022fb43655ec65ad97a.hot-update.js"></script>
+
+</body></html>
