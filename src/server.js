@@ -45,7 +45,10 @@ app.post("/", (req, res) => {
     subject: "Thanks for reaching out",
     text: `Hi ${req.body.user.name},
 
-Thanks so much for reaching out to Swifter. We are the destination for full-funnel video, display and performance advertising solutions.
+Thanks so much for reaching out to Swifter.
+
+We are the destination for full-funnel video, display and performance advertising solutions.
+
 A member of the team will contact you shortly.
 
 Thanks,
