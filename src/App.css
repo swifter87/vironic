@@ -10,6 +10,16 @@ form {
   padding: 20px;
 }
 
+.text-contact {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  height: 200px;
+  margin: auto;
+  font-size: 65px;
+  margin: auto;
+  text-align: center;
+}
+
 .contact-description {
   text-align: center;
   font-size: 16px;
@@ -26,7 +36,9 @@ form {
 
 .logo {
   display: inline-block;
-  padding: 14px;
+  padding: 19px;
+  width: 110px;
+  height: 43px;
 }
 
 .responsive-home {
@@ -40,31 +52,31 @@ form {
   display: inline-block;
   object-fit: contain;
   padding: 20px;
+  align-self: center;
 }
 
 .image-text {
-  color: #109aeb;
-  max-width: 850px;
+  color: #24284d;
+  max-width: 700px;
 }
 
 .first-text {
-  font-size: 58px;
+  font-size: 68px;
   margin: 0;
 }
 
 .second-text {
   color: #000000;
-  font-size: 24px;
-  padding-top: 20px;
-
-  margin-top: 0;
+  font-size: 20px;
+  padding: 20px 20px 20px 0;
+  margin: 0;
   max-width: 650px;
 }
 
 a {
   margin: 5px;
   padding: 13px;
-  color: rgb(83, 122, 204);
+  color: #025768;
   font-size: 17px;
   font-weight: strong;
   cursor: pointer;
@@ -77,22 +89,22 @@ a:hover {
 
 .text {
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(20, 17, 17);
   max-width: 500px;
   text-align: left;
   padding: 0 20px 20px 20px;
 }
 
 .description {
-  padding-top: 20px;
-  color: #8a9598;
+  color: white;
+  max-width: 400px;
+  margin: auto;
 }
 
 .strip-blue {
   background-color: #000121;
   color: rgb(228, 228, 228);
   text-align: center;
-  padding-bottom: 150px;
 }
 
 .strip-white {
@@ -106,7 +118,7 @@ a:hover {
 .strip-green {
   background-color: #000000;
   color: rgb(255, 255, 255);
-  padding-bottom: 150px;
+  padding-bottom: 60px;
 }
 
 .text-black {
@@ -120,9 +132,11 @@ a:hover {
 
 .text-white {
   font-size: 25px;
-  color: rgb(255, 255, 255);
-  max-width: 970px;
+  color: rgb(201, 201, 201);
+  max-width: 770px;
   text-align: center;
+  margin: auto;
+  padding: 20px 30px;
 }
 
 .title-demand {
@@ -155,7 +169,7 @@ a:hover {
   max-width: 800px;
   margin: auto;
   font-size: 90px;
-  padding: 50px 20px 50px 20px;
+  padding: 50px 20px 20px 20px;
   text-align: center;
   color: #ffffff;
 }
@@ -177,6 +191,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 20px;
 }
 
 .box {
@@ -188,15 +203,15 @@ a:hover {
 }
 
 .subline {
-  font-size: 45px;
+  font-size: 30px;
   color: #00abcd;
   text-align: left;
 }
 
 .subline-text {
-  font-size: 20px;
+  font-size: 17px;
   color: white;
-  max-width: 400px;
+  max-width: 300px;
   text-align: left;
 }
 
@@ -204,23 +219,28 @@ a:hover {
   padding: 15px;
 }
 
+.text {
+  padding-left: 60px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: center;
+  padding-bottom: 60px;
+  justify-content: space-around;
 }
 
 .card {
-  width: 25%;
+  width: 30%;
   font-size: 17px;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 30px;
   color: #00abcd;
-  padding: 10px;
+
   border-radius: 25px;
 }
 
@@ -287,29 +307,19 @@ button[type="submit"]:hover {
 .container-home {
   display: flex;
   justify-content: center;
-
+  background-color: rgb(255, 255, 255);
   max-width: 1300px;
   margin: auto;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 100px;
   padding: 20px;
-  /* margin: 7% 10% 10% 10%; */
 }
 .container {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: center;
+  padding-top: 90px;
 }
 
 @media (max-width: 1100px) {
-  .navigation {
-    display: none;
-  }
-  .hamburger {
-    display: inline-block;
-    cursor: pointer;
-    padding: 8px 8px 0 0;
-  }
   .image-text {
     margin: auto;
     margin-bottom: 20px;
@@ -332,7 +342,7 @@ button[type="submit"]:hover {
     /* text-align: center; */
   }
   .second-text {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
@@ -341,23 +351,17 @@ button[type="submit"]:hover {
   }
   .responsive {
     margin: auto;
-    width: 80%;
   }
 
   .responsive-home {
     width: 80%;
     margin: auto;
-  }
-  .box {
-    width: 70%;
-  }
-
-  .container {
-    flex-direction: column;
+    display: none;
   }
 
   .container-home {
     flex-direction: column;
+    margin-top: 10px;
   }
 
   .vectors {
@@ -369,7 +373,7 @@ button[type="submit"]:hover {
   }
 
   .card {
-    width: 80%;
+    width: 40%;
   }
   .title-demand {
     padding: 15px;
@@ -382,29 +386,32 @@ button[type="submit"]:hover {
     padding: 20px;
   }
 
-  .title-advertisers {
-    font-size: 50px;
-
-    padding: 10px;
-  }
-
   .title-ua {
     font-size: 28px;
   }
 
-  .subline {
-    font-size: 30px;
+  .logo {
+    padding: 12px;
   }
-  .subline-text {
-    font-size: 20px;
+
+  .left {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 70px;
+  }
+
+  .text-contact {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 10px;
   }
 }
 
 .primary-btn {
   font-size: 18px;
-  margin: 20px 0px 20px 0px;
-  padding: 14px;
-  background-color: #4185c9;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  background-color: #00abcd;
   border-style: none;
   border-radius: 15px;
   color: rgb(255, 255, 255);
@@ -441,16 +448,72 @@ button[type="submit"]:hover {
     padding: 20px 20px 0px 20px;
   }
   .second-text {
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 400px;
   }
-}
+  .responsive {
+    width: 80%;
+  }
+  .navigation {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 18px 0 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .box {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .subline {
+    text-align: center;
+  }
+  .subline-text {
+    text-align: center;
+    margin: auto;
+  }
+  .title-advertisers {
+    font-size: 70px;
+  }
+  .list {
+    font-size: 15px;
+  }
 
+  .text-contact {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .strip-white {
+    padding-bottom: 75px;
+  }
+}
 @media (max-width: 500px) {
+  h3 {
+    margin: 0;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 35px;
+    padding-top: 3px;
+  }
+
   .first-text {
     font-size: 40px;
     padding: 5px;
@@ -465,6 +528,12 @@ button[type="submit"]:hover {
     margin: auto; */
     height: auto;
   }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
   .description {
     font-size: 15px;
   }
@@ -473,5 +542,20 @@ button[type="submit"]:hover {
   }
   .text-white {
     font-size: 20px;
+  }
+  .title-advertisers {
+    font-size: 40px;
+  }
+
+  .list {
+    font-size: 15px;
+  }
+
+  .text {
+    margin: 20px;
+  }
+
+  .subline-text {
+    font-size: 15px;
   }
 }

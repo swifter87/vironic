@@ -32,18 +32,33 @@ app.use(
 app.post("/", (req, res) => {
   console.log(req.body.user);
 
+  var notification = {
+    from: "Dima",
+    to: "dima@swifter.co",
+    subject: "New submission",
+    text: JSON.stringify(req.body.user)
+  };
+
   var mailOptions = {
-    from: "Swifter Team",
+    from: "Dima Os",
     to: req.body.user.email,
-    subject: "Welcome onboard",
+    subject: "Thanks for reaching out",
     text: `Hi ${req.body.user.name},
 
 Thanks so much for reaching out to Swifter. We are the destination for full-funnel video, display and performance advertising solutions.
 A member of the team will contact you shortly.
 
 Thanks,
-Swifter Team`
+Dima Os`
   };
+  transporter.sendMail(notification, function(error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
+
   transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
       console.log(error);
@@ -51,6 +66,7 @@ Swifter Team`
       console.log("Email sent: " + info.response);
     }
   });
+
   res.end();
 });
 

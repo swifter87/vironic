@@ -6,7 +6,7 @@ export default class Form extends React.Component {
     lastName: "",
     url: "",
     email: "",
-    choice: "",
+    choice: "Advertise",
     status: "",
     style: "yes"
   };
@@ -57,14 +57,14 @@ export default class Form extends React.Component {
           <div className="contact-container">
             <div id="contact">
               <h1 className="title-demand">Let's talk :)</h1>
-              <div className="container">
-                <p className="contact-description">
-                  Want to know more about Swifter and what we could do for you?
-                  Let’s get a conversation going. Complete the form below and
-                  we’ll be in touch as soon as possible.
-                </p>
-              </div>
+
+              <p className="contact-description">
+                Want to know more about Swifter and what we could do for you?
+                Let’s get a conversation going. Complete the form below and
+                we’ll be in touch as soon as possible.
+              </p>
             </div>
+
             <form onSubmit={this.onSubmit}>
               <label htmlFor="app">Company or App Name</label>
               <input
@@ -125,21 +125,32 @@ export default class Form extends React.Component {
 
               <div className="options">
                 <div className="radio-container">
-                  <input type="radio" name="reason" value="Advertise"></input>
+                  <input
+                    type="radio"
+                    onClick={e => this.change(e)}
+                    name="choice"
+                    value="Advertise"
+                  ></input>
                   Advertise
                 </div>
                 <div className="radio-container">
                   <input
                     type="radio"
-                    name="reason"
-                    value="Advertise"
+                    onClick={e => this.change(e)}
+                    name="choice"
+                    value="Monetize"
                     defaultChecked
                   ></input>
                   Monetize
                 </div>
 
                 <div className="radio-container">
-                  <input type="radio" name="reason" value="Advertise"></input>
+                  <input
+                    type="radio"
+                    onClick={e => this.change(e)}
+                    name="choice"
+                    value="Both"
+                  ></input>
                   Both
                 </div>
               </div>
@@ -151,15 +162,7 @@ export default class Form extends React.Component {
             </form>
           </div>
         ) : (
-          <h1
-            className="text-black"
-            style={{
-              padding: "130px",
-              height: "200px",
-              margin: "auto",
-              fontSize: "65px"
-            }}
-          >
+          <h1 className="text-contact">
             Thank you!<br></br>
             We will be in touch shortly.
           </h1>
