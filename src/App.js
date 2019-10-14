@@ -244,7 +244,7 @@ export default class App extends React.Component {
 
         <Form />
         <footer className="footer">
-          <p>@ Copyright 2019 Global Promoting Services Ltd</p>
+          <p>@ Copyright 2019 Global Promoting Services LTD.</p>
           <p>483 Green Lanes, London, N13 4BS, UK</p>
         </footer>
       </div>
