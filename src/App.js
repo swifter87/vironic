@@ -3,68 +3,23 @@ import React from "react";
 import "./App.css";
 import logo from "./swifter_black.png";
 import image from "./mobile.png";
-import video from "./mynew.mp4";
+
 import video2 from "./video2.gif";
 import user from "./user.gif";
 
 import Form from "./Form";
+import Overlay from "./Overlay";
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      menu: true
-    };
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick = e => {
-    e.preventDefault();
-    this.setState({
-      menu: !this.state.menu
-    });
-  };
-
   render() {
     return (
-      // <div className="container">
       <div className="main">
-        {/* <video ref="vidRef" src={video} type="video/mp4" autoPlay></video> */}
-        <div style={{ backgroundColor: "white" }}>
+        <div>
           <nav className="header">
             <div>
               <img src={logo} alt="Logo" className="logo" />
             </div>
-
-            {/* <div className="hamburger">
-          <div className="line line1"></div>
-          <div className="line line2"></div>
-          <div className="line line3"></div>
-        </div> */}
-
-            {this.state.menu ? (
-              <button
-                onClick={this.onClick}
-                className="hamburger hamburger--spring"
-                type="button"
-              >
-                <span className="hamburger-box">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
-            ) : (
-              <button
-                onClick={this.onClick}
-                className="hamburger hamburger--spring is-active"
-                type="button"
-              >
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
-            )}
-
+            <Overlay />
             <div className="navigation">
               <a href="#">Home</a>
               <a href="#advertise">Advertisers</a>
@@ -81,16 +36,6 @@ export default class App extends React.Component {
                 and retention, or maximize ad revenue, Swifter has you covered.
               </p>
               <button className="primary-btn">Find out more</button>
-
-              {/* <a href="#monetization">
-            <button type="button" className="primary-btn">
-              Developer
-            </button>
-          </a>
-
-          <a href="#advertise">
-            <button className="primary-btn"> Advertiser</button>
-          </a> */}
             </div>
             <div></div>
             <img
@@ -104,11 +49,6 @@ export default class App extends React.Component {
           <div className="strip-blue" id="advertise">
             <h1 className="title-advertisers">Advertisers</h1>
 
-            {/* <p className="text-white">
-              Preferential access to the data-driven audiences you want to
-              reach, across in-app, mobile web, and desktop.
-            </p> */}
-
             <img
               src={video2}
               className="responsive"
@@ -119,7 +59,7 @@ export default class App extends React.Component {
             />
             <div className="cards">
               <div className="card">
-                <h3>Inventory at scale</h3>
+                <h3>Inventory At Scale</h3>
 
                 <p className="description">
                   Global user base lets you scale across non-gaming, gaming,
@@ -128,7 +68,7 @@ export default class App extends React.Component {
                 </p>
               </div>
               <div className="card">
-                <h3>VPAID Mobile </h3>
+                <h3>Vpaid Mobile </h3>
                 <p className="description">
                   Directly track viewability, completion and click-through rates
                   to see how individual ads are performing and devise improved
@@ -136,7 +76,7 @@ export default class App extends React.Component {
                 </p>
               </div>
               <div className="card">
-                <h3> Brand safety</h3>
+                <h3> Brand Safety</h3>
                 <p className="description">
                   Constant and consistent application of new technologies to
                   ensure a transparent trading environment. Certified
@@ -157,9 +97,6 @@ export default class App extends React.Component {
               >
                 User Aquisition
               </h1>
-              {/* <h1 className="title-ua">
-                Start your managed or programmatic campaign.
-              </h1> */}
 
               <ul className="text">
                 <li className="list">
@@ -186,22 +123,14 @@ export default class App extends React.Component {
             ></img>
           </div>
 
-          {/* <div className="footer">
-        <p>This website is using cookies, please agree</p>
-        <button onClick="">I agree</button>
-      </div> */}
+          {/* Swifter provides publishers monetization opportunities with a suite
+              of cross-platform ad formats that range from video (in-stream and
+              interactive in-stream video), to rich media and native units. All
+              our ad formats adhere to the latest VAST, VPAID or MRAID standards. */}
         </div>
         <div className="strip-green" id="monetization">
           <h1 className="title-advertisers">Monetization</h1>
-          {/* <p className="text-white">
-            We help you monetize your audience with global demand from the world’s
-            largest mobile advertisers. Maximize your yield through brand safe
-            content and dedicated service.
-            {/* Swifter provides publishers monetization opportunities with a suite
-              of cross-platform ad formats that range from video (in-stream and
-              interactive in-stream video), to rich media and native units. All
-              our ad formats adhere to the latest VAST, VPAID or MRAID standards. */}{" "}
-          {/* </p> */}
+
           <div className="boxes">
             <div className="box">
               <h1 className="subline"> Global Demand</h1>

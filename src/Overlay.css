@@ -1,0 +1,44 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 100%;
+  background-color: rgb(15, 16, 39);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  font-family: "Quicksand", sans-serif;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #71a3c5;
+  display: block;
+  transition: 0.3s;
+}
+
+.close-btn {
+  justify-content: flex-end;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #f1f1f1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
