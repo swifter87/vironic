@@ -1,9 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 25px 0px 25px;
+  padding: 5px 25px 0px 25px;
   max-width: 1500px;
   margin: auto;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main {
+  min-height: 70vh;
+  position: relative;
 }
 
 form {
@@ -27,18 +36,19 @@ form {
 
 .hamburger {
   display: none;
+  position: relative;
 }
 
 .navigation {
-  margin: 20px;
-  padding-top: 5px;
+  margin: 25px 20px 0px 20px;
 }
 
 .logo {
-  display: inline-block;
-  padding: 19px;
-  width: 110px;
-  height: 43px;
+  width: 240px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .responsive-home {
@@ -56,7 +66,7 @@ form {
 }
 
 .image-text {
-  color: #24284d;
+  color: #25074d;
   max-width: 700px;
 }
 
@@ -73,23 +83,37 @@ form {
   max-width: 650px;
 }
 
-a {
+.navigation a {
   margin: 5px;
   padding: 13px;
-  color: #025768;
+  color: #550a68;
   font-size: 17px;
   font-weight: strong;
   cursor: pointer;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.navigation a:hover {
+  transform: scale(1.5);
+}
+
+.navigation .primary-btn {
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  margin: 0;
+}
+
+.navigation .link {
+  color: rgb(255, 255, 255);
+}
+
+.navigation.link:hover {
+  transform: scale(1.1);
 }
 
 .text {
   font-size: 20px;
-  color: rgb(20, 17, 17);
+  color: rgb(45, 3, 49);
   max-width: 500px;
   text-align: left;
   padding: 0 20px 20px 20px;
@@ -143,7 +167,7 @@ a:hover {
   max-width: 800px;
   font-size: 70px;
   margin: auto;
-
+  color: #3a065e;
   padding-top: 80px;
 
   text-align: center;
@@ -205,7 +229,7 @@ a:hover {
 
 .subline {
   font-size: 30px;
-  color: #00abcd;
+  color: #a833f7;
   text-align: left;
 }
 
@@ -240,12 +264,13 @@ a:hover {
 
 h3 {
   font-size: 30px;
-  color: #00abcd;
+  color: #a833f7;
 
   border-radius: 25px;
 }
 
 input[type="text"],
+input[type="password"],
 select,
 textarea {
   width: 100%;
@@ -256,7 +281,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  color: #00abcd;
+  color: #a833f7;
 }
 
 textarea:focus,
@@ -282,13 +307,12 @@ button[type="submit"]:hover {
   border-radius: 5px;
   background-color: #ffffff;
   padding: 20px;
-
   max-width: 500px;
   margin: auto;
   margin-bottom: 40px;
 }
 
-.footer-policy {
+/* .footer-policy {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -296,12 +320,16 @@ button[type="submit"]:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
-}
+} */
 
 .footer {
+  left: 0;
+  bottom: 0;
+  right: 0;
+
   padding: 20px;
   background-color: #000000;
-  color: #00abcd;
+  color: #a833f7;
   text-align: center;
 }
 
@@ -311,7 +339,7 @@ button[type="submit"]:hover {
   background-color: rgb(255, 255, 255);
   max-width: 1300px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 110px;
   padding: 20px;
 }
 .container {
@@ -362,7 +390,7 @@ button[type="submit"]:hover {
 
   .container-home {
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 100px;
   }
 
   .vectors {
@@ -391,10 +419,6 @@ button[type="submit"]:hover {
     font-size: 28px;
   }
 
-  .logo {
-    padding: 12px;
-  }
-
   .left {
     text-align: left;
     padding-left: 40px;
@@ -412,12 +436,17 @@ button[type="submit"]:hover {
   font-size: 18px;
   margin: 10px 0px 20px 0px;
   padding: 10px;
-  background-color: #00abcd;
+  background-color: #a833f7;
   border-style: none;
   border-radius: 15px;
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
+  transition: transform 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #b951ff;
 }
 
 @keyframes shake {
@@ -443,7 +472,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .first-text {
     font-size: 55px;
     padding: 20px 20px 0px 20px;
@@ -465,7 +494,7 @@ button[type="submit"]:hover {
   .hamburger {
     display: inline-block;
     cursor: pointer;
-    padding: 28px 18px 0 0;
+    padding: 40px 18px 0 0;
   }
   .card {
     width: 100%;
@@ -510,9 +539,7 @@ button[type="submit"]:hover {
   }
 
   .logo {
-    width: 90px;
-    height: 35px;
-    padding-top: 3px;
+    width: 140px;
   }
 
   .first-text {
@@ -561,6 +588,6 @@ button[type="submit"]:hover {
   }
 
   .hamburger {
-    padding: 18px 18px 0 0;
+    padding: 22px 18px 0 0;
   }
 }

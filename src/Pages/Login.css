@@ -1,0 +1,36 @@
+.password-line {
+  display: inline-block;
+  color: rgb(4, 82, 128);
+  padding-bottom: 12px;
+  padding-right: 5px;
+  margin-left: 125px;
+  align-self: center;
+}
+
+.login-container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+.login-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  text-align: center;
+  font-size: 32px;
+  margin: auto;
+  padding-top: 50px;
+}
+.password-line:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+
+  margin-bottom: 0;
+}

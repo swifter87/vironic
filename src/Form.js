@@ -8,21 +8,21 @@ export default class Form extends React.Component {
     email: "",
     choice: "Advertise",
     status: "",
-    style: "yes"
+    style: "yes",
   };
   change(e) {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   }
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
 
     fetch("/", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         user: {
@@ -31,10 +31,10 @@ export default class Form extends React.Component {
           last: this.state.lastName,
           email: this.state.email,
           url: this.state.url,
-          choice: this.state.choice
-        }
-      })
-    }).then(function() {
+          choice: this.state.choice,
+        },
+      }),
+    }).then(function () {
       console.log("Success");
     });
     this.setState({
@@ -45,7 +45,7 @@ export default class Form extends React.Component {
       email: "",
       choice: "",
       status: "",
-      style: ""
+      style: "",
     });
     this.forceUpdate();
   };
@@ -55,11 +55,11 @@ export default class Form extends React.Component {
       <div>
         {this.state.style ? (
           <div className="contact-container">
-            <div id="contact">
+            <div>
               <h1 className="title-demand">Let's talk :)</h1>
 
               <p className="contact-description">
-                Want to know more about Swifter and what we could do for you?
+                Want to know more about Vironic and what we could do for you?
                 Let’s get a conversation going. Complete the form below and
                 we’ll be in touch as soon as possible.
               </p>
@@ -72,62 +72,41 @@ export default class Form extends React.Component {
                 id="company"
                 name="company"
                 placeholder="Your app name.."
-                onChange={e => this.change(e)}
+                onChange={(e) => this.change(e)}
                 required
                 value={this.state.company}
               ></input>
-              <label htmlFor="url">App Store URL*</label>
-              <input
-                type="text"
-                id="url"
-                name="url"
-                placeholder="Your app store URL.."
-                onChange={e => this.change(e)}
-                required
-                value={this.state.url}
-              ></input>
-              <label htmlFor="fname">First Name</label>
+
+              <label htmlFor="fname">Your Name</label>
               <input
                 type="text"
                 id="fname"
                 name="firstName"
-                placeholder="Your first name.."
-                onChange={e => this.change(e)}
+                placeholder="Your name.."
+                onChange={(e) => this.change(e)}
                 required
                 value={this.state.firstName}
               ></input>
-              <label htmlFor="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastName"
-                placeholder="Your last name.."
-                onChange={e => this.change(e)}
-                required
-                value={this.state.lastName}
-              ></input>
+
               <label htmlFor="email">Email</label>
               <input
                 type="text"
                 id="email"
                 name="email"
                 placeholder="Your email.."
-                onChange={e => this.change(e)}
+                onChange={(e) => this.change(e)}
                 required
                 value={this.state.email}
               ></input>
 
-              <label htmlFor="choice">
-                {" "}
-                Are You Looking to Advertise or Monetize with Swifter?*
-              </label>
+              <label htmlFor="choice"> Are You Looking to?</label>
               <br></br>
 
               <div className="options">
                 <div className="radio-container">
                   <input
                     type="radio"
-                    onClick={e => this.change(e)}
+                    onClick={(e) => this.change(e)}
                     name="choice"
                     value="Advertise"
                   ></input>
@@ -136,7 +115,7 @@ export default class Form extends React.Component {
                 <div className="radio-container">
                   <input
                     type="radio"
-                    onClick={e => this.change(e)}
+                    onClick={(e) => this.change(e)}
                     name="choice"
                     value="Monetize"
                     defaultChecked
@@ -147,7 +126,7 @@ export default class Form extends React.Component {
                 <div className="radio-container">
                   <input
                     type="radio"
-                    onClick={e => this.change(e)}
+                    onClick={(e) => this.change(e)}
                     name="choice"
                     value="Both"
                   ></input>

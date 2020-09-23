@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Overlay.css";
+import { Z_ASCII } from "zlib";
 
 export default class Overlay extends React.Component {
   constructor(props) {
@@ -39,28 +40,30 @@ export default class Overlay extends React.Component {
   render() {
     return (
       <div>
-        <button
-          onClick={this.open}
-          className="hamburger hamburger--spring"
-          type="button"
-        >
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
+        {this.state.menu ? (
+          <button
+            onClick={this.open}
+            className="hamburger hamburger--spring"
+            type="button"
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
+        ) : (
+          <button
+            onClick={this.close}
+            className="hamburger hamburger--spring is-active "
+            type="button"
+            style={{ zIndex: "30" }}
+          >
+            <span className="hamburger-box ">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
+        )}
 
         <div id="myNav" className="overlay " style={this.state.style}>
-          <nav className="header close-btn">
-            <button
-              onClick={this.close}
-              className="hamburger hamburger--spring is-active "
-              type="button"
-            >
-              <span className="hamburger-box ">
-                <span className="hamburger-inner"></span>
-              </span>
-            </button>
-          </nav>
           <div className="overlay-content">
             <a
               onClick={e => {
@@ -73,13 +76,14 @@ export default class Overlay extends React.Component {
             <a
               onClick={e => {
                 this.close(e);
-                window.location.assign("/#monetization");
+
+                // window.location.assign("/#monetization");
               }}
               href="#"
             >
               Publishers
             </a>
-            <a href="#">Clients</a>
+
             <a
               onClick={e => {
                 this.close(e);
@@ -89,6 +93,7 @@ export default class Overlay extends React.Component {
             >
               Contact
             </a>
+            <a href="/login">Login</a>
           </div>
         </div>
       </div>
