@@ -3,10 +3,10 @@ const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "../build")));
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
 app.use(express.static("./"));
@@ -17,15 +17,15 @@ var transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "dima@swifter.co",
-    pass: "swifter2580"
-  }
+    pass: "swifter2580",
+  },
 });
 
 app.use(bodyParser.json());
 
 app.use(
   bodyParser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 
@@ -36,7 +36,7 @@ app.post("/", (req, res) => {
     from: "Dima",
     to: "dima@swifter.co",
     subject: "New submission",
-    text: JSON.stringify(req.body.user)
+    text: JSON.stringify(req.body.user),
   };
 
   var mailOptions = {
@@ -52,9 +52,9 @@ We are the destination for full-funnel video, display and performance advertisin
 A member of the team will contact you shortly.
 
 Thanks,
-Dima Os`
+Dima Os`,
   };
-  transporter.sendMail(notification, function(error, info) {
+  transporter.sendMail(notification, function (error, info) {
     if (error) {
       console.log(error);
     } else {
@@ -62,7 +62,7 @@ Dima Os`
     }
   });
 
-  transporter.sendMail(mailOptions, function(error, info) {
+  transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
     } else {
