@@ -66,17 +66,6 @@ export default class Form extends React.Component {
             </div>
 
             <form onSubmit={this.onSubmit}>
-              <label htmlFor="app">Company or App Name</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Your app name.."
-                onChange={(e) => this.change(e)}
-                required
-                value={this.state.company}
-              ></input>
-
               <label htmlFor="fname">Your Name</label>
               <input
                 type="text"
@@ -86,6 +75,16 @@ export default class Form extends React.Component {
                 onChange={(e) => this.change(e)}
                 required
                 value={this.state.firstName}
+              ></input>
+              <label htmlFor="app">Company or App Name</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your app name.."
+                onChange={(e) => this.change(e)}
+                required
+                value={this.state.company}
               ></input>
 
               <label htmlFor="email">Email</label>
@@ -99,7 +98,7 @@ export default class Form extends React.Component {
                 value={this.state.email}
               ></input>
 
-              <label htmlFor="choice"> Are You Looking to?</label>
+              <label htmlFor="choice"> I Am Interested in:</label>
               <br></br>
 
               <div className="options">
@@ -110,7 +109,7 @@ export default class Form extends React.Component {
                     name="choice"
                     value="Advertise"
                   ></input>
-                  Advertise
+                  Advertising
                 </div>
                 <div className="radio-container">
                   <input
@@ -120,7 +119,7 @@ export default class Form extends React.Component {
                     value="Monetize"
                     defaultChecked
                   ></input>
-                  Monetize
+                  Monetizing
                 </div>
 
                 <div className="radio-container">

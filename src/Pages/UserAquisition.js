@@ -35,7 +35,7 @@ class UserAquisition extends Component {
           <img
             src={user}
             className="responsive"
-            alt="image"
+            alt=""
             width="214"
             height="462"
           ></img>

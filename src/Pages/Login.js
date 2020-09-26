@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Form from "../Form";
+import React from "react";
 
 import "./Login.css";
 export default class Login extends React.Component {
@@ -8,35 +7,35 @@ export default class Login extends React.Component {
     this.state = {
       email: "",
       password: "",
-      message: ""
+      message: "",
     };
   }
 
   change(e) {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   }
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
 
     fetch("/login", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         user: {
           email: this.state.email,
-          pass: this.state.password
-        }
-      })
-    }).then(function() {});
+          pass: this.state.password,
+        },
+      }),
+    }).then(function () {});
     this.setState({
       email: "",
       password: "",
-      message: "ERROR: Invalid user credentials."
+      message: "ERROR: Invalid user credentials.",
     });
     this.forceUpdate();
   };
@@ -54,7 +53,7 @@ export default class Login extends React.Component {
               id="email"
               name="email"
               placeholder="Email"
-              onChange={e => this.change(e)}
+              onChange={(e) => this.change(e)}
               required
               value={this.state.email}
             ></input>
@@ -64,7 +63,7 @@ export default class Login extends React.Component {
               id="password"
               name="password"
               placeholder="Password"
-              onChange={e => this.change(e)}
+              onChange={(e) => this.change(e)}
               required
               value={this.state.password}
             ></input>
@@ -72,8 +71,9 @@ export default class Login extends React.Component {
               <button className="primary-btn" value="Login">
                 Login
               </button>
-
-              <a className="password-line">Reset password</a>
+              <a href="/" className="password-line">
+                Reset password
+              </a>
             </div>
           </form>
         </div>

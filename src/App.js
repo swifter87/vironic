@@ -8,13 +8,7 @@ import Home from "./Pages/Home";
 
 import logo from "./logo.png";
 import Overlay from "./Overlay";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Advertisers from "./Pages/Advertisers";
 import UserAquisition from "./Pages/UserAquisition";
 import Monetizaion from "./Pages/Monetizaion";
@@ -32,7 +26,7 @@ export default class App extends React.Component {
               <Overlay />
               <div className="navigation">
                 <a href="/#advertise">Advertisers</a>
-                <a href="/#monetization">Publishers</a>
+                <a href="/#monetization">Monetizaion</a>
                 <a href="/#contact">Contact</a>
                 <button className="primary-btn">
                   <Link to="/Login" className="link">
@@ -55,7 +49,7 @@ export default class App extends React.Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p>@ Copyright 2020 Vironic</p>
+            <p> vironic.co</p>
             <p>483 Green Lanes, London, N13 4BS, UK</p>
           </footer>
         </Router>

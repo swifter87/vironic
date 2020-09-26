@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
-app.use(express.static("./"));
+app.use(express.static("../build"));
 
 var nodemailer = require("nodemailer");
 

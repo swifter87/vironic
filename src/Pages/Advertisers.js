@@ -5,14 +5,12 @@ class Advertisers extends Component {
   render() {
     return (
       <div className="strip-blue">
-        <h1 className="title-advertisers">
-          Addressing your key OTT business needs
-        </h1>
+        <h1 className="title-advertisers">Advertisers</h1>
 
         <img
           src={video2}
           className="responsive"
-          alt="image"
+          alt=""
           width="525"
           height="350"
           style={{ height: "auto" }}

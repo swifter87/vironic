@@ -1,39 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Overlay.css";
-import { Z_ASCII } from "zlib";
 
 export default class Overlay extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       style: {
-        left: "100%"
+        left: "100%",
       },
-      menu: true
+      menu: true,
     };
 
     this.open = this.open.bind(this);
     this.close = this.close.bind(this);
   }
 
-  close = e => {
-    e.preventDefault();
+  close = (e) => {
     this.setState({
       style: {
-        left: "100%"
+        left: "100%",
       },
-      menu: !this.state.menu
+      menu: !this.state.menu,
     });
   };
 
-  open = e => {
+  open = (e) => {
     e.preventDefault();
     this.setState({
       style: {
-        left: "0%"
+        left: "0%",
       },
-      menu: !this.state.menu
+      menu: !this.state.menu,
     });
   };
 
@@ -66,7 +65,9 @@ export default class Overlay extends React.Component {
         <div id="myNav" className="overlay " style={this.state.style}>
           <div className="overlay-content">
             <a
-              onClick={e => {
+              href="/#"
+              onClick={(e) => {
+                e.preventDefault();
                 this.close(e);
                 window.location.assign("/#advertise");
               }}
@@ -74,26 +75,29 @@ export default class Overlay extends React.Component {
               Advertisers{" "}
             </a>
             <a
-              onClick={e => {
+              href="/#"
+              onClick={(e) => {
+                e.preventDefault();
                 this.close(e);
-
-                // window.location.assign("/#monetization");
+                window.location.assign("/#monetization");
               }}
-              href="#"
             >
               Publishers
             </a>
 
             <a
-              onClick={e => {
+              href="/#"
+              onClick={(e) => {
+                e.preventDefault();
                 this.close(e);
                 window.location.assign("/#contact");
               }}
-              href="#"
             >
               Contact
             </a>
-            <a href="/login">Login</a>
+            <Link to="/Login" className="link" onClick={(e) => this.close(e)}>
+              Login
+            </Link>
           </div>
         </div>
       </div>
