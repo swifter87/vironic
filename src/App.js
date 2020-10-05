@@ -49,8 +49,9 @@ export default class App extends React.Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p> vironic.co</p>
-            <p>483 Green Lanes, London, N13 4BS, UK</p>
+            <p> Global Promoting Services(Israel) LTD.</p>
+            {/* <p>261 Bolton Rd, Bury, Gtr. Manchester, England, BL8 2NZ</p> */}
+            <p>23 Yehuda Halevi, Israel, Tel Aviv, 6513601</p>
           </footer>
         </Router>
       </div>

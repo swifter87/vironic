@@ -278,13 +278,14 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  color: #a833f7;
+  color: #000000;
 }
 
 textarea:focus,
