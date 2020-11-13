@@ -9,6 +9,10 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
+  app.get("/sellers.json", function (req, res) {
+    res.sendFile(path.join(__dirname, "../../..", "sellers.json"));
+  });
+
 app.use(express.static("../build"));
 
 var nodemailer = require("nodemailer");

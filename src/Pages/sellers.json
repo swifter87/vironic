@@ -1,0 +1,49 @@
+{
+  "contact_email": "dima@vironic.co",
+  "contact_address": "23 Yehuda Halevi, Israel, Tel Aviv, 6513601",
+  "version": "1.0",
+  "identifiers": [
+    {
+      "name": "TAG-ID",
+      "value": "d5bc086179645ef0"
+    }
+  ],
+  "sellers": [
+    {
+      "seller_id": "1905",
+      "seller_type": "PUBLISHER",
+      "name": "Games2Win",
+      "domain": "games2win.com"
+    },
+    {
+      "seller_id": "1906",
+      "seller_type": "PUBLISHER",
+      "name": "PeopleFun",
+      "domain": "peoplefun.com"
+    },
+    {
+      "seller_id": "1907",
+      "seller_type": "PUBLISHER",
+      "name": "Newsy",
+      "domain": "newsy.com"
+    },
+    {
+      "seller_id": "1908",
+      "seller_type": "PUBLISHER",
+      "name": "Mobilityware",
+      "domain": "mobilityware.com"
+    },
+    {
+      "seller_id": "1909",
+      "seller_type": "PUBLISHER",
+      "name": "VTV studios",
+      "domain": "vtv.studio"
+    },
+    {
+      "seller_id": "1910",
+      "seller_type": "PUBLISHER",
+      "name": "GameCircus",
+      "domain": "gamecircus.com"
+    }
+  ]
+}

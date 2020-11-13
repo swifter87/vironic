@@ -21,8 +21,8 @@ class Advertisers extends Component {
 
             <p className="description">
               Global user base lets you scale across non-gaming, gaming, social
-              apps, and more. Over 100M monthly unique impressions forin-app and
-              CTV.
+              apps, and more. Over 100M monthly unique impressions for  in-app
+              and CTV.
             </p>
           </div>
           <div className="card">
