@@ -49,7 +49,7 @@ export default class App extends React.Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p> Global Promoting Services(Israel) LTD.</p>
+            <p> Global Promoting Services LTD.</p>
             {/* <p>261 Bolton Rd, Bury, Gtr. Manchester, England, BL8 2NZ</p> */}
             <p>261 Bolton Rd, Bury, Gtr. Manchester, England, BL8 2NZ</p>
           </footer>
