@@ -10,7 +10,7 @@ import logo from "./logo.png";
 import Overlay from "./Overlay";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Advertisers from "./Pages/Advertisers";
-import UserAquisition from "./Pages/UserAquisition";
+import Development from "./Pages/Development";
 import Monetizaion from "./Pages/Monetizaion";
 
 export default class App extends React.Component {
@@ -25,8 +25,8 @@ export default class App extends React.Component {
               </a>
               <Overlay />
               <div className="navigation">
-                <a href="/#advertise">Advertisers</a>
-                <a href="/#monetization">Monetizaion</a>
+                <a href="/#advertise">Buyers</a>
+                <a href="/#monetization">Sellers</a>
                 <a href="/#contact">Contact</a>
                 <button className="primary-btn">
                   <Link to="/Login" className="link">
@@ -39,7 +39,7 @@ export default class App extends React.Component {
               <Route exact path="/">
                 <Home />
                 <Advertisers />
-                <UserAquisition />
+                <Development />
                 <Monetizaion />
                 <Form />
               </Route>
@@ -49,9 +49,9 @@ export default class App extends React.Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p> Global Promoting Services LTD.</p>
+            <p> Global Promoting Services Ltd.</p>
             {/* <p>261 Bolton Rd, Bury, Gtr. Manchester, England, BL8 2NZ</p> */}
-            <p>261 Bolton Rd, Bury, Gtr. Manchester, England, BL8 2NZ</p>
+            <p>261 Bolton Rd, Bury, UK, BL8 2NZ</p>
           </footer>
         </Router>
       </div>

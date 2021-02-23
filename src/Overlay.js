@@ -72,7 +72,7 @@ export default class Overlay extends React.Component {
                 window.location.assign("/#advertise");
               }}
             >
-              Advertisers{" "}
+              Buyers{" "}
             </a>
             <a
               href="/#"
@@ -82,7 +82,7 @@ export default class Overlay extends React.Component {
                 window.location.assign("/#monetization");
               }}
             >
-              Publishers
+              Sellers
             </a>
 
             <a
@@ -95,8 +95,13 @@ export default class Overlay extends React.Component {
             >
               Contact
             </a>
-            <Link to="/Login" className="link" onClick={(e) => this.close(e)}>
-              Login
+            <Link
+              to="/Login"
+              style={{ color: "#a3ddcb", fontWeight: "bold" }}
+              className="link"
+              onClick={(e) => this.close(e)}
+            >
+              Log in
             </Link>
           </div>
         </div>

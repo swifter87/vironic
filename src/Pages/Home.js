@@ -1,30 +1,29 @@
 import React, { Component } from "react";
-import backVideo from "../preview.mp4";
-
-import image from "../programmatic_main.png";
+import backVideo from "../IMG_2144.mp4";
 
 class Home extends Component {
   render() {
     return (
       <div className="container-home">
-        {/* <video autoPlay muted className="background-video">
-          <source src={backVideo} type="video/mp4"></source>
-        </video> */}
         <div className="image-text">
-          <p className="first-text">Programmatic video advertising</p>
+          <p className="first-text">Programmatic TV advertising</p>
           <p className="second-text">
-            We help agencies, direct advertisers, and trading desks scale
-            programmatic marketing efforts and maximize revenues.
+            Whether you’re looking for a Connected TV advertising platform to
+            launch CTV ads, or an OTT advertising platform to access OTT
+            inventory, Vironic has got you covered.
           </p>
         </div>
 
-        <img
-          src={image}
+        <video
+          width="700"
+          height="500"
+          autoPlay
           className="responsive-home"
-          alt=""
-          width="600"
-          height="400"
-        />
+          muted
+        >
+          <source src={backVideo} type="video/mp4"></source>
+        </video>
+
         <div id="advertise"></div>
       </div>
     );

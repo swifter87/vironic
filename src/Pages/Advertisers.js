@@ -1,43 +1,49 @@
 import React, { Component } from "react";
-import video2 from "../video2.gif";
 
 class Advertisers extends Component {
   render() {
     return (
       <div className="strip-blue">
         <h1 className="title-advertisers">Advertisers</h1>
+        {/* <div className="image_background responsive"></div> */}
 
-        <img
-          src={video2}
-          className="responsive"
-          alt=""
-          width="525"
-          height="350"
-          style={{ height: "auto" }}
-        />
+        <h4 className="ad-title">
+          Programmatically reach your audiences across both Vironic-owned apps
+          and eading publishers’ apps through direct inventory and third-party
+          exchanges.
+        </h4>
+
         <div className="cards">
           <div className="card">
-            <h3> Scale</h3>
+            <h3> Cross-platform</h3>
 
             <p className="description">
-              Global user base lets you scale across non-gaming, gaming, social
-              apps, and more. Over 100M monthly unique impressions for  in-app
-              and CTV.
+              We allow you to easily tap into the fastest growing user segment
+              and reach your desired audiences on all devices whether it’s
+              Android, Apple, or Roku.
             </p>
           </div>
           <div className="card">
-            <h3>Inventory</h3>
+            <h3>Viewable Impressions</h3>
             <p className="description">
-              All screens and environments: Premium display and video ad
-              inventory across Desktop, Mobile, In-App and CTV.
+              We understand the importance of your brand impact. That’s why we
+              focus on ensuring our publishers deliver the most viewable
+              impressions.
             </p>
           </div>
           <div className="card">
             <h3> Brand Safety</h3>
             <p className="description">
-              Constant and consistent application of new technologies to ensure
-              a transparent trading environment. Certified third-party ad
-              quality partner: Pixalate.
+              We have a low acceptance rate and we only allow publishers with
+              controlled and regulated quality content into our network.
+            </p>
+          </div>
+          <div className="card">
+            <h3> Premium Content</h3>
+            <p className="description">
+              Lots of traffic doesn’t necessarily equal leads and sales,
+              therefore we aim for the best traffic rather than most traffic by
+              working with premium publishers only.
             </p>
           </div>
         </div>

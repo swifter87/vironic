@@ -6,6 +6,10 @@ class Monetizaion extends Component {
       <div>
         <div className="strip-green">
           <h1 className="title-advertisers">Monetization</h1>
+          <h4 className="ad-title">
+            Vironic helps to monetize the next generation of the content
+            consumed using smart TV technology.
+          </h4>
 
           <div className="boxes">
             <div className="box">
@@ -22,22 +26,21 @@ class Monetizaion extends Component {
                 Excite users with ad formats that enhance your app experience.
                 <br></br>
                 Power your full screen, vertical, and in-feed placements with
-                the highest quality ads
+                the highest quality ads.
               </p>
             </div>
             <div className="box">
               <h1 className="subline"> Transparent Reporting</h1>
               <p className="subline-text">
                 Reporting on all advertiser campaigns running across publishers’
-                websites: campaign & viewability reports, audience insights and
+                apps: campaign & viewability reports, audience insights and
                 inventory quality analysis.
               </p>
             </div>
 
             <div className="box">
               <h1 className="subline">
-                {" "}
-                Programmatic Integration <br></br>
+                Smooth Integration<br></br>
               </h1>
               <p id="contact" className="subline-text">
                 We provide automated solutions for you to maximize your revenue
